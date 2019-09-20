@@ -1,0 +1,19 @@
+TCP通讯流程：
+1\（Winsock初始化：WSAStartup）
+
+服务器端
+socket:建立套接字
+bind：发布端口
+listen：开始侦听
+accept：接纳客户端连接（如同公司前台）
+send/recv/recvfrom：收发数据（如同客户经理）
+
+客户端
+socket：建立套接字
+bind：发布端口 //可以不绑定，即默认绑定到0端口
+connect：连接到服务器
+send/recv/recvfrom：收发数据（如同客户经理）
+
+多任务操作系统：由多个进程同时运行，每个进程又含有1个或多个进程
+线程：
+简单的理解，开辟一个线程就是多开了一个main函数
