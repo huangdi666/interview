@@ -1,0 +1,17 @@
+#pragma once
+enum {PORT = 1122};
+enum EType
+{
+	REQ_BROW = 0X4321,
+	REQ_ADD,
+	REQ_DEL,
+	REQ_MOD,
+	REQ_FIND_NUM,
+	REQ_FIND_NAME,
+	REQ_FIND_SALARY,
+	REQ_CHECK,
+
+	ADM_LOGIN=0x5000,
+	ADM_ADD,
+	ADM_DEL,
+};
